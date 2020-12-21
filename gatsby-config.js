@@ -1,16 +1,11 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://cogwheel.netlify.app',
     title: "Gatsby Netlify CMS",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -39,6 +34,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-typescript",
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
     },
   ],
 };

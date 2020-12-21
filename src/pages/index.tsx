@@ -29,14 +29,14 @@ const listStyles = {
   paddingLeft: 0,
 }
 const listItemStyles = {
-  fontWeight: "300",
+  fontWeight: 300,
   fontSize: "24px",
   maxWidth: "560px",
 }
 
 const linkStyle = {
   color: "#8954A8",
-  fontWeight: "bold",
+  fontWeight: 700,
   fontSize: "16px",
   verticalAlign: "5%",
 }
